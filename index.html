@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDetective</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <!-- font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div class="container">
+
+            <div class="header">
+                <h1>DevDetective</h1>
+                <button class="dlBtn">
+                    <p dlPara>Dark</p>
+                    <i class="fa-solid fa-moon" dlIcon></i>
+                </button>
+            </div>
+
+            <form class="search-Bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="searchInput" placeholder="Enter a GitHub Username..." search-field>
+                <button searchButton>Search</button>
+            </form>
+
+            <!-- Invalid Username -->
+            <p class="inus" invalidUsername>Invalid Username</p>
+
+            <div class="main">
+                <div class="basic-info">
+                    <img pfp>
+                    <div>
+                        <p person-name></p>
+                        <a href="" link-username target="_blank"></a>
+                    </div>
+                    <p joining-date></p>
+                </div>
+
+                <p class="bio" person-bio></p>
+
+                <div class="profile-info">
+                    <div>
+                        <p class="statTitle">Repositories</p>
+                        <p class="stat" repo-num></p>
+                    </div>
+                    <div>
+                        <p class="statTitle">Followers</p>
+                        <p class="stat" followers-num></p>
+                    </div>
+                    <div>
+                        <p class="statTitle">Following</p>
+                        <p class="stat" following-num></p>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <div class="location contactDiv">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="" target="_blank" location-info></a>
+                    </div>
+
+                    <div class="link contactDiv">
+                        <i class="fa-solid fa-link"></i>
+                        <a href="" target="_blank" link-info></a>
+                    </div>
+
+                    <div class="x contactDiv">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <a href="" target="_blank" x-username></a>
+                    </div>
+
+                    <div class="company contactDiv">
+                        <i class="fa-solid fa-building-user"></i>
+                        <p current-company></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
