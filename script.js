@@ -170,12 +170,10 @@ dlBtn.addEventListener('click',()=>{
 // checking preffered mode of a user's pc
 const preferMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 if(preferMode){
-    console.log('dark');
     applyDark();
 }
 else{
     applyLight();
-    console.log("light");
 }
 
 
@@ -183,11 +181,9 @@ else{
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',(e)=>{
     if(e.matches){
         applyDark();
-        console.log("Prefers dark scheme");
     }
     else{
         applyLight();
-        console.log("prefers light theme");
     }
 })
 
